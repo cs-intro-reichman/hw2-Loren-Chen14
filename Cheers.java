@@ -17,7 +17,7 @@ public class Cheers {
 
             for (int i =0 ; i < cheer.length() ; i++ ) {
                 if ( anBefore.indexOf(cheer.charAt(i)) == -1) {
-                        System.out.println("Give me a " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!" );
+                        System.out.println("Give me a  " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!" );
                 } else {
                         System.out.println("Give me an " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!" );  
                 }
