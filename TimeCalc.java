@@ -7,14 +7,17 @@ public class TimeCalc {
         int minutesToAdd = Integer.parseInt(args[1]);
         String Smin , Shour;
 
+        // calculating the new time 
         int totalMinutes = ( hours * 60 ) + minutes + minutesToAdd ;
         int totalHours = totalMinutes / 60 ; 
         int newHours = totalHours % 24 ; 
         int newMinutes = totalMinutes - ( totalHours * 60 );
 
+        // creating new strings for hour and minutes
         Shour = "" + newHours ;
         Smin = "" + newMinutes ;
 
+        // checking if there is a need to add 0 before minutes or hours if so changing 
         if ( newMinutes < 10 ){
             Smin = "0" + newMinutes ; 
         }
@@ -22,6 +25,7 @@ public class TimeCalc {
             Shour = "0" + newHours ;
         }
 
+        // printing the new time 
         System.out.println( Shour + ":" + Smin);
     }
 }
