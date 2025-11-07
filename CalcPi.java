@@ -2,7 +2,7 @@
 public class CalcPi {
 	public static void main(String [] args) { 
 	    int numOfTerms = Integer.parseInt(args[0]);
-		double negative = 0 , positive = 0 , PI = 0;
+		long negative = 0 , positive = 0 , PI = 0;
 
 		double place = 1 ;													// place is the dividing varible 1 1/3 1/5 ...... 
 
