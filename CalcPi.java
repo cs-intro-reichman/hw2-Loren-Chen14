@@ -2,9 +2,9 @@
 public class CalcPi {
 	public static void main(String [] args) { 
 	    int numOfTerms = Integer.parseInt(args[0]);
-		double negative = 0 , positive = 0 , PI = 0;
+		double negative = 0.0 , positive = 0.0 , PI = 0.0;
 
-		double place = 1 ;													// place is the dividing varible 1 1/3 1/5 ...... 
+		double place = 1.0 ;													// place is the dividing varible 1 1/3 1/5 ...... 
 
 		// for loop that calculate the sum that is approximated to PI/4
 		for ( int i = 1 ; i <= numOfTerms ; i++ ){
