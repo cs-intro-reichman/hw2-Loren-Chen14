@@ -5,6 +5,7 @@ public  class  TestRandom {
 		int higher = 0 , smaller = 0 ;                         // veriables for higher or smaller (equal) then 0.5
 		double Ratio;
 
+		// checks all the random numbers if greater then 0.5 or not and adding 1 to count  
 		for (int i = 0 ; i < N ; i++ ) {
 			double Random = Math.random();
 			if (Random > 0.5) {
@@ -14,13 +15,14 @@ public  class  TestRandom {
 			}
 		}
 
+		// calculating the ratio
 		if ( higher > smaller ) {
 			Ratio = (double) smaller / higher ;
 		} else {
 			Ratio = (double) higher / smaller ;
 		}
 
-
+		// printing the number of counts and the ratio if there is no 0 counter
 		if ((higher == 0) || (smaller == 0)) {
 			System.out.println("> 0.5: " + higher);
 			System.out.println("<<= 0.5: " + smaller);

@@ -15,6 +15,7 @@ public class Cheers {
 
             cheer = cheer.toUpperCase();                // turning all the letters to capital letters
 
+            // pasing by every letter in cheer to check if to add an or a before 
             for (int i =0 ; i < cheer.length() ; i++ ) {
                 if ( anBefore.indexOf(cheer.charAt(i)) == -1) {
                         System.out.println("Give me a  " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!" );
@@ -25,6 +26,7 @@ public class Cheers {
 
             System.out.println("What does that spell?");
 
+            // printing cheer the number of times that num got 
             for (int j=0 ; j < num ; j++ ){
                 System.out.println(cheer + "!!!");
             }
