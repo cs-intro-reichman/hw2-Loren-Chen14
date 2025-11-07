@@ -16,8 +16,8 @@ public class CalcPi {
 			place += 2 ;						
 		}
 
-		PI = 4 * ( positive + negative );									// new pi varible that take the approximated sum of pi/4 and multiplie by 4 
+		PI = 4.0 * ( positive + negative );									// new pi varible that take the approximated sum of pi/4 and multiplie by 4 
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi approximated:     " + PI);
+		System.out.println("pi, approximated:     " + PI);
 	}
 }
