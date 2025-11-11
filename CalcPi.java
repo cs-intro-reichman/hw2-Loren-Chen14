@@ -14,7 +14,6 @@ public class CalcPi {
 		}
 
 		PI *= 4.0 ;									// varible that take the approximated sum of pi/4 and multiplie by 4 
-		//PI = Math.round(PI * 1e16) / 1e16;
 		System.out.println("pi according to Java: " + Math.PI);
 		System.out.println("pi, approximated:     " + PI);
 	}
