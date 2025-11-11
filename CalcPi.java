@@ -1,6 +1,20 @@
 // Computes an approximation of PI.
 public class CalcPi {
 	public static void main(String [] args) { 
-	    // Replace this comment with your code
+	    int numOfTerms = Integer.parseInt(args[0]);
+		double term = 0.0 ,PI = 0.0;
+
+		double sign = 1.0 ;													// sign is the variable that dividing between negative to positive in the sum terms
+
+		// for loop that calculate the sum that is approximated to PI/4
+		for ( int i = 0 ; i < numOfTerms ; i++ ){
+			term = sign / ( 2 * i + 1 ) ;
+			PI += term;
+			sign *= -1;						
+		}
+
+		PI *= 4.0 ;									// varible that take the approximated sum of pi/4 and multiplie by 4 
+		System.out.println("pi according to Java: " + Math.PI);
+		System.out.println("pi, approximated:     " + PI);
 	}
 }
