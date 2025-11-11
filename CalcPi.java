@@ -4,7 +4,7 @@ public class CalcPi {
 	    int numOfTerms = Integer.parseInt(args[0]);
 		double term = 0.0 ,PI = 0.0;
 
-		double sign = 1.0 ;													// place is the dividing varible 1 1/3 1/5 ...... 
+		double sign = 1.0 ;													// sign is the variable that dividing between negative to positive in the sum terms
 
 		// for loop that calculate the sum that is approximated to PI/4
 		for ( int i = 0 ; i < numOfTerms ; i++ ){
@@ -14,6 +14,7 @@ public class CalcPi {
 		}
 
 		PI *= 4.0 ;									// varible that take the approximated sum of pi/4 and multiplie by 4 
+		PI = Math.round(PI * 1e16) / 1e16;
 		System.out.println("pi according to Java: " + Math.PI);
 		System.out.println("pi, approximated:     " + PI);
 	}
